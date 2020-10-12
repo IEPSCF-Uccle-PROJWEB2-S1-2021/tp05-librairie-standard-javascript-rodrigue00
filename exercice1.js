@@ -7,13 +7,14 @@ function chuckNorris(msg) {
   let premier = "";
   for (let index = 0; index < binaire.length; index++) {
 
-    if (index !== 0)
-      result += " ";
+    
     if (premier !== binaire.charAt(index)) {
+      if (index !== 0)
+      result += " ";
       if (binaire.charAt(index) === "0")
         result += "00 0";
       else
-        resul += "0 0";
+        result += "0 0";
     }
     else {
       result = result + "0";
@@ -34,4 +35,4 @@ function binary(numba) {
   }
   return resul;
 }
-
+console.log(chuckNorris("C"));
